@@ -1,0 +1,20 @@
+.image_container {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  margin-top: 2em;
+}
+
+.image_container div {
+  background-color: var(--very-dark-blue);
+  width: 48px;
+  height: 48px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 12px;
+}
+
+.image_container div:nth-child(2) {
+  margin: 0 1em;
+}

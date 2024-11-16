@@ -3,17 +3,18 @@ import logoImg from "../public/logo.svg";
 import iconFolder from "../public/icon-folder.svg";
 import iconUpload from "../public/icon-upload.svg";
 import iconDocument from "../public/icon-document.svg";
+import ImgLogo from "./assets/components/ImgLogo/ImgLogo";
 
 function App() {
   return (
     <div id="container">
       <section className="left_side section-area">
         <img src={logoImg} alt="Logotipo" />
-        <figure>
-          <img src={iconDocument} alt="" />
-          <img src={iconFolder} alt="" />
-          <img src={iconUpload} alt="" />
-        </figure>
+        <div className="image_container">
+          <ImgLogo url_img={iconDocument} alt="Document" />
+          <ImgLogo url_img={iconFolder} alt="Folder" />
+          <ImgLogo url_img={iconUpload} alt="Upload" />
+        </div>
       </section>
       <section className="right_side section-area">
         <p> You’ve used 815 GB of your storage</p>
